@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>About</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <link rel="stylesheet" type="text/css" href="inc/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      h1 {
+        font-size: 55px;
+        letter-spacing: 5px;
+      }
+
+      p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+      }
+
+      .noIndent {
+        text-indent: 0;
+      }
+
+      .h3 {
+        letter-spacing: 5px;
+      }
+
+      div.header-img {
+        background-image: url("img/flying.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        position: relative;
+        color: #ffffff;
+        text-align: center;
+        height: 75vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      div.indentation {
+        font-size: 16px;
+        text-indent: 50px;
+      }
+
+      .mySlides {
+        display: none;
+      }
+
+      .img {
+        vertical-align: middle;
+        height: 100%;
+        width: 100%;
+      }
+
+      .slideshow-container {
+        max-width: 600px;
+        position: relative;
+        margin: auto;
+        box-sizing: border-box;
+        padding-top: 50px;
+      }
+
+      .text {
+        font-family: "Roboto", sans-serif;
+        letter-spacing: 5px;
+        color: #f2f2f2;
+        font-size: 18px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active {
+        background-color: #717171;
+      }
+
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @-webkit-keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @media only screen and (max-width: 300px) {
+        .text {
+          font-size: 11px;
+        }
+      }
+
+      div.body_footer {
+        text-align: right;
+        font-weight: bold;
+      }
+
+      .left_img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        padding: 5px;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: #ffffff;
+      }
+
+      .right_img {
+        float: right;
+        margin-left: 15px;
+        margin-bottom: 15px;
+        padding: 5px;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: #ffffff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a id="top"></a>
+
+    <div>
+      <ul>
+        <a href="index.html"
+          ><img
+            class="header_left_img"
+            title="Star Wars Logo"
+            src="img/star_wars_logo.png"
+            alt="Star Wars Logo"
+        /></a>
+        <li><a class="purple-a" href="contact.html">CONTACT</a></li>
+        <li><a class="blue-a" href="about.html">ABOUT</a></li>
+        <li><a class="green-a" href="artwork.html">ARTWORK</a></li>
+        <li class="dropdown">
+          <a class="red-a" href="prequel_trilogy.html" id="dropbtn-prequel"
+            >PREQUEL TRILOGY</a
+          >
+          <div class="dropdown-content">
+            <a class="green-a" href="the_phantom_menace.html"
+              >Episode I: The Phantom Menace</a
+            >
+            <a class="purple-a" href="attack_of_the_clones.html"
+              >Episode II: Attack of the Clones</a
+            >
+            <a class="blue-a" href="revenge_of_the_sith.html"
+              >Episode III: Revenge of the Sith</a
+            >
+          </div>
+        </li>
+        <li class="dropdown">
+          <a class="purple-a" href="orginal_trilogy.html" id="dropbtn-original"
+            >ORIGINAL TRILOGY</a
+          >
+          <div class="dropdown-content">
+            <a class="red-a" href="a_new_hope.html">Episode IV: A New Hope</a>
+            <a class="blue-a" href="the_empire_strikes_back.html"
+              >Episode V: The Empire Strikes Back</a
+            >
+            <a class="green-a" href="return_of_the_jedi.html"
+              >Episode VI: Return of the Jedi</a
+            >
+          </div>
+        </li>
+        <li><a class="blue-a" href="george_lucas.html">GEORGE LUCAS</a></li>
+      </ul>
+    </div>
+
+    <div id="page-container">
+      <div class="header-img">
+        <h1>ABOUT ME</h1>
+      </div>
+
+      <section id="section">
+        <div id="content-wrap">
+          <div class="content">
+            <fieldset>
+              <legend>
+                <h3 class="h3">Me</h3>
+              </legend>
+              <img
+                class="left_img"
+                title="Selfie"
+                src="img/ma-photo.jpg"
+                alt="Selfie"
+                height="317"
+                width="236"
+              />
+              <div class="indentation">
+                <h4 class="noIndent">Hello, I'm Iheb!</h4>
+                <p>
+                  My name is Iheb Hosni, and I live in Sousse, Tunisia. 
+                  I earned a degree in Mechanical Engineering from ISSAT Sousse. 
+                  I work as the head of the production team at Vege Engine, 
+                  where I oversee the manufacturing of mechanical components. 
+                  In my free time, I enjoy pursuing my passion for learning new skills and exploring different fields. 
+                  Recently, I've been learning about web development at the Go My Code, 
+                  and I've been applying these new skills to a personal project. 
+                  I believe that learning new skills is essential for personal growth and professional development,
+                   and I'm always eager to explore new opportunities for learning and growth.
+                </p>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>
+                <h3 class="h3">Why Star Wars?</h3>
+              </legend>
+              <img
+                class="right_img"
+                title="Star Wars Logo"
+                src="img/contact-logo.jpeg"
+                alt="Star Wars Logo"
+                id="left"
+                height="225"
+                width="400"
+              />
+              <div class="indentation">
+                <p>
+                  Star Wars has a massive following of devoted fans all around the world.
+                   These fans are known for their passion and enthusiasm for the Star Wars franchise,
+                    which spans across multiple movies, TV shows, books, and other forms of media. 
+                    For many Star Wars fans, the series is more than just a form of entertainment; 
+                    it's a way of life.
+                     They often have a deep understanding and appreciation for the complex characters,
+                      intricate storylines, and unique world-building that the franchise offers .
+                </p>
+                <p>
+                  Many Star Wars fans also enjoy dressing up as their favorite characters, 
+                  attending conventions,
+                   and participating in various online forums and social media groups to discuss and debate different aspects of the series.
+                    Whether they're die-hard fans of the original trilogy or younger generations brought in by newer movies or shows, 
+                    Star Wars fans are a diverse and dedicated community that continues to grow and thrive.
+                </p>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>
+                <h3 class="h3">Education and work</h3>
+              </legend>
+              <div class="center">
+                <p><strong>Bachelor's degree :</strong>&#160; Technical Sciences</p>
+                <p>
+                  <strong>Higher Institute of Applied Sciences and Technology of Sousse :</strong>&#160; 
+                  degree in mechanical engineering (Graduated 2022)
+                </p>
+                <p>
+                  <strong>Work :</strong>&#160; head of the production team , at Vege Engine
+                </p>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>
+                <h3 class="h3">Pictures</h3>
+              </legend>
+
+              <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 10</div>
+                  <img
+                    class="img"
+                    src="img/new1.jpg"
+                    alt="Challenge Robots"
+                  />
+                  <div class="text">
+                    Challenge Robots
+                  </div>
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 10</div>
+                  <img
+                    class="img"
+                    src="img/new2.jpg"
+                    alt="Challenge Robots"
+                  />
+                  <div class="text">Challenge Robots</div>
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 10</div>
+                  <img
+                    class="img"
+                    src="img/new3.jpg"
+                    alt="At Work"
+                  />
+                  <div class="text">At Work</div>
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">4 / 10</div>
+                  <img
+                    class="img"
+                    src="img/new4.jpg"
+                    alt="Food Time"
+                  />
+                  <div class="text">Food Time</div>
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">5 / 10</div>
+                  <img
+                    class="img"
+                    src="img/new5.jpg"
+                    alt="Summer"
+                  />
+                  <div class="text">Summer</div>
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">6 / 10</div>
+                  <img class="img" src="img/new6.jpg" alt="View" />
+                  <div class="text">View</div>
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">7 / 10</div>
+                  <img
+                    class="img"
+                    src="img/new7.jpg"
+                    alt="Sushi Food"
+                  />
+                  <div class="text">Sushi Food</div>
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">8 / 10</div>
+                  <img
+                    class="img"
+                    src="img/new8.jpg"
+                    alt="View"
+                  />
+                  <div class="text">View</div>
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">9 / 10</div>
+                  <img
+                    class="img"
+                    src="img//new9.jpg"
+                    alt="Clouds View"
+                  />
+                  <div class="text">Clouds View</div>
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">10 / 10</div>
+                  <img
+                    class="img"
+                    src="img/new10.jpg"
+                    alt="University"
+                  />
+                  <div class="text">University</div>
+                </div>
+              </div>
+
+              <br />
+
+              <div style="text-align: center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </fieldset>
+          </div>
+          <!--end div.content -->
+        </div>
+        <!--end #content-wrap -->
+      </section>
+      <!--end #section -->
+
+      <footer>
+        <ul id="ul-social">
+          <li id="li-social">
+            <a
+              class="fa fa-facebook"
+              href="https://www.facebook.com/StarWars"
+              target="_blank"
+              title="facebook"
+            ></a>
+            <a
+              class="fa fa-instagram"
+              href="https://www.instagram.com/starwars/"
+              target="_blank"
+              title="instagram"
+            ></a>
+            <a
+              class="fa fa-twitter"
+              href="https://twitter.com/starwars"
+              target="_blank"
+              title="twitter"
+            ></a>
+            <a
+              class="fa fa-youtube"
+              href="https://www.youtube.com/user/starwars"
+              target="_blank"
+              title="youtube"
+            ></a>
+          </li>
+        </ul>
+        <div class="footer-space">
+          <p>© 2023 Iheb Hosni</p>
+          <p><a class="footer-c" href="#top">Back To Top</a></p>
+        </div>
+      </footer>
+    </div>
+    <!--end #page-container -->
+    <script src="js/about-script.js"></script>
+  </body>
+</html>
